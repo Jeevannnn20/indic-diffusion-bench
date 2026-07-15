@@ -1,0 +1,27 @@
+{
+  "model": "ollama:qwen3:1.7b",
+  "evaluations": 40,
+  "overall_exact_accuracy": 0.225,
+  "overall_answer_mention_rate": 0.4,
+  "mean_latency_seconds": 0.5353,
+  "total_latency_seconds": 21.4133,
+  "exact_accuracy_by_variant": {
+    "english": 0.6,
+    "hindi_devanagari": 0.0,
+    "hinglish": 0.2,
+    "roman_hindi": 0.1
+  },
+  "english_minus_variant_gap": {
+    "hindi_devanagari": 0.6,
+    "hinglish": 0.4,
+    "roman_hindi": 0.5
+  },
+  "exact_accuracy_by_category": {
+    "arithmetic_time": 0.0,
+    "family_relationship": 0.125,
+    "logical_constraints": 0.625,
+    "multi_turn_correction": 0.25,
+    "spatial_reasoning": 0.125
+  },
+  "warning": "Pilot results are for pipeline validation and are not research findings."
+}

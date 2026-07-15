@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IndicDiffusionBench item",
+  "type": "object",
+  "required": [
+    "id",
+    "category",
+    "difficulty",
+    "original_language",
+    "review_status",
+    "variants",
+    "accepted_answers",
+    "canonical_answer",
+    "split"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
+    "category": {
+      "enum": [
+        "arithmetic_time",
+        "family_relationship",
+        "spatial_reasoning",
+        "logical_constraints",
+        "multi_turn_correction"
+      ]
+    },
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "original_language": {"enum": ["hi", "hinglish"]},
+    "review_status": {"enum": ["draft_unverified", "reviewed", "adjudicated"]},
+    "variants": {"type": "object"},
+    "accepted_answers": {"type": "object"},
+    "canonical_answer": {"type": "string", "minLength": 1},
+    "split": {"enum": ["pilot", "train", "validation", "test"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}
+

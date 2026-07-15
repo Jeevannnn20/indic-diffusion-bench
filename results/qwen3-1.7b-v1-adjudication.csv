@@ -1,0 +1,41 @@
+id,variant,semantic_correct,primary_label,notes
+arithmetic_time_001,hindi_devanagari,false,arithmetic_error,Returned 12:10
+arithmetic_time_001,roman_hindi,true,correct_but_verbose,Displayed the correct calculation and 12:00
+arithmetic_time_001,hinglish,false,arithmetic_error,Returned 7:10
+arithmetic_time_001,english,false,arithmetic_error,Returned 12:30 PM
+arithmetic_time_002,hindi_devanagari,false,temporal_reasoning_error,Returned Tuesday
+arithmetic_time_002,roman_hindi,false,temporal_reasoning_error,Did not produce the correct weekday
+arithmetic_time_002,hinglish,false,temporal_reasoning_error,Returned Wednesday
+arithmetic_time_002,english,false,temporal_reasoning_error,Returned Wednesday
+family_relationship_001,hindi_devanagari,false,relation_reasoning_error,Called Asha Rohan's sister
+family_relationship_001,roman_hindi,true,correct_cross_script_verbose,Stated the mother relation but switched script and ignored answer-only format
+family_relationship_001,hinglish,false,relation_reasoning_error,Called Asha and Rohan siblings
+family_relationship_001,english,true,correct_but_verbose,Correctly stated that Asha is Rohan's mother
+family_relationship_002,hindi_devanagari,false,relation_reasoning_error,Returned Meera
+family_relationship_002,roman_hindi,false,relation_reasoning_error,Returned Meera
+family_relationship_002,hinglish,false,relation_reasoning_error,Returned Kiran
+family_relationship_002,english,true,correct,Returned Dev
+spatial_reasoning_001,hindi_devanagari,false,spatial_reasoning_error,Returned north
+spatial_reasoning_001,roman_hindi,false,spatial_reasoning_error,Returned east
+spatial_reasoning_001,hinglish,false,spatial_reasoning_error,Returned southeast
+spatial_reasoning_001,english,true,correct,Returned northeast
+spatial_reasoning_002,hindi_devanagari,false,spatial_reasoning_error,Did not return west
+spatial_reasoning_002,roman_hindi,false,spatial_reasoning_error,Produced an unrelated word
+spatial_reasoning_002,hinglish,false,spatial_reasoning_error,Returned south
+spatial_reasoning_002,english,false,spatial_reasoning_error,Returned south
+logical_constraints_001,hindi_devanagari,true,correct_but_verbose,Correctly stated shelf 2
+logical_constraints_001,roman_hindi,true,correct_but_verbose,Correctly stated shelf 2
+logical_constraints_001,hinglish,true,correct,Returned shelf 2
+logical_constraints_001,english,true,correct,Returned 2
+logical_constraints_002,hindi_devanagari,false,constraint_reasoning_error,Returned Friday
+logical_constraints_002,roman_hindi,true,correct,Returned Wednesday
+logical_constraints_002,hinglish,true,correct,Returned Wednesday
+logical_constraints_002,english,true,correct,Returned Wednesday
+multi_turn_correction_001,hindi_devanagari,false,correction_integration_error,Restated a relation without answering tallest
+multi_turn_correction_001,roman_hindi,false,non_answer,Listed all three names without selecting an answer
+multi_turn_correction_001,hinglish,false,correction_integration_error,Produced an ordering that makes Kabir tallest
+multi_turn_correction_001,english,true,correct,Returned Rohan
+multi_turn_correction_002,hindi_devanagari,false,correction_integration_error,Returned open
+multi_turn_correction_002,roman_hindi,false,correction_integration_error,Returned open
+multi_turn_correction_002,hinglish,false,correction_integration_error,Returned open
+multi_turn_correction_002,english,true,correct,Returned closed
