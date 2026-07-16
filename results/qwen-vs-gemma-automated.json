@@ -1,0 +1,59 @@
+{
+  "models": {
+    "ollama:qwen3:1.7b": {
+      "source": "results/qwen3-1.7b-v1.jsonl",
+      "overall_exact_accuracy": 0.225,
+      "mean_latency_seconds": 0.5353,
+      "exact_accuracy_by_variant": {
+        "english": 0.6,
+        "hindi_devanagari": 0.0,
+        "hinglish": 0.2,
+        "roman_hindi": 0.1
+      },
+      "exact_accuracy_by_category": {
+        "arithmetic_time": 0.0,
+        "family_relationship": 0.125,
+        "logical_constraints": 0.625,
+        "multi_turn_correction": 0.25,
+        "spatial_reasoning": 0.125
+      }
+    },
+    "ollama:gemma3:4b": {
+      "source": "results/gemma3-4b-v1.jsonl",
+      "overall_exact_accuracy": 0.15,
+      "mean_latency_seconds": 2.2592,
+      "exact_accuracy_by_variant": {
+        "english": 0.3,
+        "hindi_devanagari": 0.1,
+        "hinglish": 0.1,
+        "roman_hindi": 0.1
+      },
+      "exact_accuracy_by_category": {
+        "arithmetic_time": 0.0,
+        "family_relationship": 0.375,
+        "logical_constraints": 0.375,
+        "multi_turn_correction": 0.0,
+        "spatial_reasoning": 0.0
+      }
+    }
+  },
+  "candidate_minus_baseline": {
+    "baseline": "ollama:qwen3:1.7b",
+    "candidate": "ollama:gemma3:4b",
+    "overall_exact_accuracy": -0.075,
+    "mean_latency_seconds": 1.7239,
+    "exact_accuracy_by_variant": {
+      "english": -0.3,
+      "hindi_devanagari": 0.1,
+      "hinglish": -0.1,
+      "roman_hindi": 0.0
+    },
+    "exact_accuracy_by_category": {
+      "arithmetic_time": 0.0,
+      "family_relationship": 0.25,
+      "logical_constraints": -0.25,
+      "multi_turn_correction": -0.25,
+      "spatial_reasoning": -0.125
+    }
+  }
+}

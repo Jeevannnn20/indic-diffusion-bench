@@ -1,0 +1,41 @@
+id,variant,semantic_correct,primary_label,notes
+arithmetic_time_001,hindi_devanagari,true,correct_but_verbose,Returned 12:00 with extra time-of-day wording
+arithmetic_time_001,roman_hindi,false,arithmetic_error,Returned 11:55
+arithmetic_time_001,hinglish,false,arithmetic_error,Returned 11:55 AM
+arithmetic_time_001,english,false,arithmetic_error,Returned 11:40 AM
+arithmetic_time_002,hindi_devanagari,false,temporal_reasoning_error,Returned Monday
+arithmetic_time_002,roman_hindi,false,temporal_reasoning_error,Returned Friday
+arithmetic_time_002,hinglish,false,temporal_reasoning_error,Returned Monday with an invented date
+arithmetic_time_002,english,false,temporal_reasoning_error,Returned Monday
+family_relationship_001,hindi_devanagari,false,relation_reasoning_error,Returned uncle and grandfather relations
+family_relationship_001,roman_hindi,true,correct_but_verbose,Correctly stated that Asha is Rohan's mother
+family_relationship_001,hinglish,false,relation_reasoning_error,Returned grandfather
+family_relationship_001,english,false,relation_reasoning_error,Returned grandmother
+family_relationship_002,hindi_devanagari,true,correct,Returned Dev
+family_relationship_002,roman_hindi,true,correct,Returned Dev
+family_relationship_002,hinglish,true,correct_but_verbose,Correctly stated that Dev is youngest
+family_relationship_002,english,true,correct,Returned Dev
+spatial_reasoning_001,hindi_devanagari,false,spatial_reasoning_error,Returned east
+spatial_reasoning_001,roman_hindi,false,spatial_reasoning_error,Returned malformed east wording
+spatial_reasoning_001,hinglish,false,spatial_reasoning_error,Returned east
+spatial_reasoning_001,english,false,spatial_reasoning_error,Returned southeast
+spatial_reasoning_002,hindi_devanagari,true,correct_but_verbose,Correctly stated west
+spatial_reasoning_002,roman_hindi,false,non_answer,Produced unrelated text
+spatial_reasoning_002,hinglish,true,correct_but_verbose,Correctly stated west after extra wording
+spatial_reasoning_002,english,false,spatial_reasoning_error,Returned north
+logical_constraints_001,hindi_devanagari,true,correct_but_verbose,Correctly stated shelf 2
+logical_constraints_001,roman_hindi,true,correct_but_verbose,Correctly stated shelf 2
+logical_constraints_001,hinglish,true,correct_but_verbose,Returned shelf number two
+logical_constraints_001,english,true,correct,Returned shelf 2
+logical_constraints_002,hindi_devanagari,true,correct_but_verbose,Correctly stated Wednesday
+logical_constraints_002,roman_hindi,false,constraint_reasoning_error,Returned Monday
+logical_constraints_002,hinglish,true,correct,Returned Wednesday
+logical_constraints_002,english,true,correct,Returned Wednesday
+multi_turn_correction_001,hindi_devanagari,false,correction_integration_error,Returned Kabir
+multi_turn_correction_001,roman_hindi,false,correction_integration_error,Claimed Kabir is taller than Rohan
+multi_turn_correction_001,hinglish,false,correction_integration_error,Returned Kabir
+multi_turn_correction_001,english,true,correct_but_verbose,Correctly stated Rohan
+multi_turn_correction_002,hindi_devanagari,false,correction_integration_error,Claimed the library is open
+multi_turn_correction_002,roman_hindi,false,correction_integration_error,Claimed the library is open
+multi_turn_correction_002,hinglish,false,correction_integration_error,Claimed the library is open
+multi_turn_correction_002,english,true,correct_but_verbose,Correctly stated closed

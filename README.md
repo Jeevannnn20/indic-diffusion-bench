@@ -99,6 +99,16 @@ python -m src.evaluate \
 
 Each replay row must contain `id`, `variant`, and `response`.
 
+Compare two completed runs and generate reusable JSON and Markdown summaries:
+
+```bash
+python -m src.compare_runs \
+  results/qwen3-1.7b-v1.jsonl \
+  results/another-model.jsonl \
+  --json-output results/comparison.json \
+  --markdown-output results/comparison.md
+```
+
 ## Metrics
 
 - **Exact accuracy:** normalized response exactly equals an accepted answer.
@@ -138,6 +148,15 @@ a mean local latency of 0.535 seconds on an M2 MacBook Air. These are pipeline
 validation figures, not research claims. See
 [`results/BASELINE_REPORT.md`](results/BASELINE_REPORT.md) for the configuration,
 language breakdown, failure analysis, and limitations.
+
+## Second local baseline
+
+Gemma 3 4B has now been evaluated under the identical protocol. It achieved
+15.0% strict exact accuracy and 42.5% manually adjudicated semantic accuracy,
+at a mean local latency of 2.259 seconds. Compared with Qwen3 1.7B, Gemma was
+more semantically accurate and much stronger on Devanagari Hindi, but less
+instruction-compliant and about 4.22 times slower. See
+[`results/QWEN_VS_GEMMA_REPORT.md`](results/QWEN_VS_GEMMA_REPORT.md).
 
 See [PROTOCOL.md](PROTOCOL.md) for the experiment design and
 [data/DATASET_CARD.md](data/DATASET_CARD.md) for dataset limitations.

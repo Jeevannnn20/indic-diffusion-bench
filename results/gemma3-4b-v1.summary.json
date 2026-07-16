@@ -1,0 +1,27 @@
+{
+  "model": "ollama:gemma3:4b",
+  "evaluations": 40,
+  "overall_exact_accuracy": 0.15,
+  "overall_answer_mention_rate": 0.425,
+  "mean_latency_seconds": 2.2592,
+  "total_latency_seconds": 90.3676,
+  "exact_accuracy_by_variant": {
+    "english": 0.3,
+    "hindi_devanagari": 0.1,
+    "hinglish": 0.1,
+    "roman_hindi": 0.1
+  },
+  "english_minus_variant_gap": {
+    "hindi_devanagari": 0.2,
+    "hinglish": 0.2,
+    "roman_hindi": 0.2
+  },
+  "exact_accuracy_by_category": {
+    "arithmetic_time": 0.0,
+    "family_relationship": 0.375,
+    "logical_constraints": 0.375,
+    "multi_turn_correction": 0.0,
+    "spatial_reasoning": 0.0
+  },
+  "warning": "Pilot results are for pipeline validation and are not research findings."
+}
